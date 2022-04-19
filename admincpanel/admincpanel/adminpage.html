@@ -1,0 +1,41 @@
+<title>Admin Page</title>
+<h2>
+  Welcome To The Admin cPanel Login Page.
+</h2>
+<br>
+<div>
+  <p>
+    Please Enter Your Admin Access Key.
+  </p>
+  <form method="get" action="C:\Users\967426\Desktop\admincpanel\mainpage.html" id="adminpsklgn">
+    <input type="password" id="adminkeyin" required>
+    <input type="submit" id="adminkeysmt" value="Access">
+  </form>
+</div>
+<script>
+  var attempt = 3; // Variable to count number of attempts.
+  window.addEventListener("load", function() {
+    // Below function Executes on submit
+    document.getElementById("adminpsklgn").addEventListener("submit", function(e) {
+      if (document.getElementById("adminkeyin").value.trim() !== "2376.*") {
+        e.preventDefault();
+        attempt--; // Decrementing by one.
+        alert("Invalid Admin Key" + (attempt > 0 ? ", Try Again!" : ""));
+        // Disabling fields after 3 attempts.
+        document.getElementById("password").disabled = attempt <= 0
+        document.getElementById("submitButton").disabled = attempt <= 0
+      }
+    })
+  })
+
+</script>
+<style>
+  body {
+    text-align: center;
+    background-position: center;
+    background-color: black;
+    color: lime;
+    padding: 50px;
+  }
+
+</style>
