@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<HTML>
+
+  <HEAD>
+    <title>Main Page</title>
+    <script type="text/javascript" src="anms3.js"></script>
+    <link href="anms.css" rel="stylesheet" type="text/css">
+  </HEAD>
+  <meta charset="UTF-8">
+
+  <body oncontextmenu="return false;">
+    <h2>Welcome To The Main Page, This Is Currently Under Maintaince.</h2>
+    <br>
+    <p>Press The RTB Button To Return To Login Page.</p>
+    <input type="button" class="button_active" value="RTB" onclick="location.href='index.html';" />
+    <p>For More Information Click <a href="https://anotepad.com/notes/8rritgy8" target="_blank">Here</a></p>
+ <script>
+           document.onkeydown = function(e) {
+          if (Event.keyCode == 123) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.keyCode == '119'.charCodeAt(0)) {
+            return false;
+          }
+        }
+ </script>
+  </BODY>
+</HTML>

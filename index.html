@@ -1,0 +1,42 @@
+<HEAD>
+  <title>Admin Page</title>
+  <script type="text/javascript" src="anms3.js"></script>
+  <link href="anms.css" rel="stylesheet" type="text/css">
+</HEAD>
+<meta charset="UTF-8">
+
+<body oncontextmenu="return false;":></body>
+  <h2>
+    Welcome, To The Admin cPanel Control Login Page.
+  </h2>
+  <br>
+  <p>
+    Please Enter Your Admin Access Key.
+  </p>
+  <form method="get" action="home.html" id="adminpsklgn">
+    <input type="password" id="adminkeyin" required>
+    <input type="submit" id="adminkeysmt" value="Access">
+    <input type="hidden" name="lang" value="en">
+    <script>
+      document.onkeydown = function(e) {
+     if (Event.keyCode == 123) {
+       return false;
+     }
+     if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+       return false;
+     }
+     if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+       return false;
+     }
+     if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+       return false;
+     }
+     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+       return false;
+     }
+     if (e.ctrlKey && e.keyCode == '119'.charCodeAt(0)) {
+       return false;
+     }
+   }
+</script>
+</body>
