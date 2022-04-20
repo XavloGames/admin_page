@@ -1,0 +1,82 @@
+<html>
+
+  <head>
+    <title>Admin Page</title>
+
+  <body oncontextmenu="return false;">
+    <div>
+      <script>
+        document.onkeydown = function(e) {
+          if (event.keyCode == 123) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.keyCode == '119'.charCodeAt(0)) {
+            return false;
+          }
+        }
+
+      </script>
+      <h2>
+        Welcome To The Admin cPanel Login Page.
+      </h2>
+    </div>
+    <div>
+      <br>
+    </div>
+    <div>
+      <p>
+        Please Enter Your Admin Access Key.
+      </p>
+      <form method="get" action="/admincpanel/homepg.html" id="adminpsklgn">
+        <input type="password" id="adminkeyin" required>
+        <input type="submit" id="adminkeysmt" value="Access">
+        <input type="hidden" name="lang" value="en">
+      </form>
+    </div>
+    <div>
+      <script id="manadb" aria-invalid="false" class="valid" hidden="true">
+        var attempt = 3; // Variable to count number of attempts.
+        window.addEventListener("load", function() {
+          // Below function Executes on submit
+          document.getElementById("adminpsklgn").addEventListener("submit", function(e) {
+            if (document.getElementById("adminkeyin").value.trim() !== "2376.*") {
+              e.preventDefault();
+              attempt--; // Decrementing by one.
+              alert("Invalid Password" + (attempt > 0 ? ", Try Again!" : ""));
+              // Disabling fields after 3 attempts.
+              document.getElementById("adminkeyin").disabled = attempt <= 0
+              document.getElementById("adminkeysmt").disabled = attempt <= 0
+            }
+          })
+        })
+
+      </script>
+    </div>
+    <style>
+      body {
+        display: block;
+        text-align: center;
+        background-position: center;
+        background-color: black;
+        color: lime;
+        padding: 50px;
+      }
+
+    </style>
+  </body>
+  </head>
+  </div>
+
+</html>
