@@ -1,0 +1,3 @@
+Admin cPanel Key Tool Is A Third-Party Easy Access To Your Domain Provider.
+@XavloGames Is Not Responsible For Any Damage Cause/Done With The Use Of Admin cPanel Key Tool
+On Behalf Of The Federal Government And First Federal Offense Operations (Admin cPanel) Is Required To Be Free Of Use, As Such, Admin Key Is Used At Your Own Risk. FDA-13 & AES-256 Encryptions Are In Effect When Using The Editor, To Protect Your Privacy. Other Custom Tools Such As Ip Spoofer & Ip Fallback Are In Effect Creating Virtually Fake Ips When Hiding Your Real Ip Under Domain Server, Disabling Any DoS & DDoS Attacks.
